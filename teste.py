@@ -31,5 +31,10 @@ def check_password():
         return True
 
 if check_password():
-    st.write("Here goes your normal Streamlit app...")
-    st.button("Click me")
+    # st.write("Here goes your normal Streamlit app...")
+    # st.button("Click me")
+
+    from PIL import Image
+    image = Image.open('images/perrito.jpeg')
+
+    st.image(image, caption='Have a grrreat day!')
